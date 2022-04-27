@@ -1,4 +1,41 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 14pt;
+}
+
+.header,
+.footer{
+    background-color: #363636;
+    color: #fff;
+}
+
+.logo{
+    font-size: 70pt;
+    font-weight: bold;
+}
+
+.main-menu,
+.footer-menu{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.main-menu li a,
+.footer-menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.main-menu li a:hover,
+.footer-menu li a:hover{
+    color: #ffcb78;
+}
+
+.main-menu li a:active,
+.footer-menu li a:active{
+    color: rgba(255, 203, 120, 0.3);
 }
