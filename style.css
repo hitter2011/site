@@ -39,3 +39,122 @@ body{
 .footer-menu li a:active{
     color: rgba(255, 203, 120, 0.3);
 }
+
+.btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: brown;
+}
+
+.btn:hover{
+    color: burlywood;
+    
+}
+
+.btn:hover{
+    color: burlywood;
+}
+
+h2,
+h3{
+    text-transform: uppercase;
+}
+
+.new-item{
+    display: inline-block;
+    border-left: 1px solid #363636;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.new-item:last-child{
+    border-right: 1px solid #363636;
+}
+
+.history-topic a{
+    color:brown;
+}
+
+.history-topic a:hover{
+    color:#ffcb78;
+}
+
+.history-topic a:active{
+    color:#ffcb78;
+}
+
+.article cite{
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price-list{
+    border-collapse: collapse;
+}
+
+.price-list td,
+.price-list th{
+    border-bottom: 1px solid #363636;
+}
+
+.price-list tr{
+    line-height: 40px;
+}
+
+.price-list th{
+    text-transform: uppercase;
+    font-size: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.price-list th:last-child{
+    text-align: right;
+}
+
+.price-list tr td:first-child{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.order label{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.order input[type="text"],
+.order select,
+.order textarea {
+    font: inherit;
+    color:inherit;
+}
+
+.order input[type="text"]:hover,
+.order select:hover,
+.order textarea:hover {
+    font: inherit;
+    color:inherit;
+}
+
+.order input[type="text"]:focus,
+.order select:focus,
+.order textarea:focus {
+    font: inherit;
+    color:inherit;
+}
+
+.developer a:last-child{
+    text-decoration: none;
+    color:brown;
+}
+
+.developer a:last-child:hover{
+    color:#ffcb78;
+}
+
+.developer a:last-child:active{
+    color:#ffcb78;
+}
