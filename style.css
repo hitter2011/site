@@ -11,6 +11,11 @@ body{
     color: #fff;
 }
 
+.header{
+    background: url('img/wheat-back.jpg') no-repeat center;
+    background-size: cover;    
+}
+
 .logo{
     font-size: 70pt;
     font-weight: bold;
@@ -69,6 +74,28 @@ h3{
 
 .new-item:last-child{
     border-right: 1px solid #363636;
+}
+
+.principle-item{
+    list-style: none;
+    border-left: 1px solid #d9d9d9;
+    padding-top: 90px;
+}
+
+.principle-item:first-child{
+    border-left: none;
+}
+
+.principle-brew{
+    background: url('img/icon-brew.png') no-repeat top left;
+}
+
+.principle-matreshka{
+    background: url('img/icon-matreshka.png') no-repeat top left;
+}
+
+.principle-thumbsup{
+    background: url('img/icon-thumbsup.png') no-repeat top left;
 }
 
 .history-topic a{
