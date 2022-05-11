@@ -1,8 +1,14 @@
 body{
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Arial', sans-serif;
     font-size: 14pt;
+    min-width: 1200px;
+}
+
+.container{
+    width: 1010px;
+    margin: 0 auto;
 }
 
 .header,
@@ -14,17 +20,38 @@ body{
 .header{
     background: url('img/wheat-back.jpg') no-repeat center;
     background-size: cover;    
+    min-height: 550px;
+    padding-top: 60px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header-top{
+    margin-bottom: 125px;
+}
+
+.header-top img{
+    float: left;
 }
 
 .logo{
     font-size: 70pt;
     font-weight: bold;
+    text-align: center;
 }
 
 .main-menu,
 .footer-menu{
+    width: 600px;
     list-style: none;
     text-transform: uppercase;
+    float: right;
+    margin: 0;
+    padding: 0;
 }
 
 .main-menu li a,
@@ -33,31 +60,80 @@ body{
     text-decoration: none;
     font-size: 16pt;
     font-weight: bold;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 23px;
+    padding-bottom: 22px;
 }
 
 .main-menu li a:hover,
 .footer-menu li a:hover{
     color: #ffcb78;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid #fff;
 }
 
 .main-menu li a:active,
 .footer-menu li a:active{
     color: rgba(255, 203, 120, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid #fff;
 }
 
 .btn{
     text-transform: uppercase;
     text-decoration: none;
-    color: brown;
+    font-weight: bold;
+    padding: 22px 18px;
+    font-size: 16pt;
+    border: none;
 }
 
-.btn:hover{
-    color: burlywood;
-    
+.brown-btn{
+    color: white;
+    background-color: #834700;
 }
 
-.btn:hover{
-    color: burlywood;
+.brown-btn:hover{
+    color: white;
+    background-color: #6a3900;
+}
+
+.brown-btn:active{
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #6a3900;
+}
+
+.white-btn{
+    color: #834700;
+    border: 2px solid #834700;
+}
+
+.white-btn:hover{
+    color: #6a3900;
+    border: 2px solid #6a3900;
+}
+
+.white-btn:active{
+    color: rgba(106, 57, 0, 0.3);
+    border: 2px solid rgba(106, 57, 0, 0.3);
+}
+
+.ghost-btn{
+    color: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.ghost-btn:hover{
+    color: #fff;
+    background-color: #a5a097;
+    border: 2px solid #a5a097;
+}
+
+.ghost-btn:active{
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #8f8a81;
+    border: 2px solid #8f8a81;
 }
 
 h2,
@@ -67,18 +143,22 @@ h3{
 
 .new-item{
     display: inline-block;
-    border-left: 1px solid #363636;
+    border-left: 1px solid #e5e5e5;
     padding-left: 10px;
     padding-top: 10px;
 }
 
 .new-item:last-child{
-    border-right: 1px solid #363636;
+    border-right: 1px solid #e5e5e5;
+}
+
+.principles{
+    background-color: #ffcb78;
 }
 
 .principle-item{
     list-style: none;
-    border-left: 1px solid #d9d9d9;
+    border-left: 1px solid #e5b66c;
     padding-top: 90px;
 }
 
@@ -99,15 +179,15 @@ h3{
 }
 
 .history-topic a{
-    color:brown;
+    color:#834700;
 }
 
 .history-topic a:hover{
-    color:#ffcb78;
+    color:#6a3900;
 }
 
 .history-topic a:active{
-    color:#ffcb78;
+    color:#cab7a2;
 }
 
 .article cite{
@@ -147,6 +227,10 @@ h3{
     font-weight: bold;
 }
 
+.order{
+    background-color: #ffcb78;
+}
+
 .order label{
     text-transform: uppercase;
     font-weight: bold;
@@ -156,21 +240,21 @@ h3{
 .order select,
 .order textarea {
     font: inherit;
-    color:inherit;
+    color: inherit;
 }
 
 .order input[type="text"]:hover,
 .order select:hover,
 .order textarea:hover {
     font: inherit;
-    color:inherit;
+    color: inherit;
 }
 
 .order input[type="text"]:focus,
 .order select:focus,
 .order textarea:focus {
     font: inherit;
-    color:inherit;
+    color: inherit;
 }
 
 .developer a:last-child{
