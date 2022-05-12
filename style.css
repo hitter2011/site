@@ -141,11 +141,16 @@ h3{
     text-transform: uppercase;
 }
 
+.new-items{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
 .new-item{
-    display: inline-block;
+    float: left;
     border-left: 1px solid #e5e5e5;
-    padding-left: 10px;
-    padding-top: 10px;
+    padding: 0 20px 0 20px;
+    width: 450px;
 }
 
 .new-item:last-child{
@@ -154,39 +159,78 @@ h3{
 
 .principles{
     background-color: #ffcb78;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.principles ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .principle-item{
-    list-style: none;
+    float: left;
+    width: 250px;
     border-left: 1px solid #e5b66c;
     padding-top: 90px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-position: 40px top;
+    background-repeat: no-repeat;
 }
 
 .principle-item:first-child{
-    border-left: none;
+    border-left-color: transparent;
 }
 
 .principle-brew{
-    background: url('img/icon-brew.png') no-repeat top left;
+    background-image: url('img/icon-brew.png');
 }
 
 .principle-matreshka{
-    background: url('img/icon-matreshka.png') no-repeat top left;
+    background-image: url('img/icon-matreshka.png');
 }
 
 .principle-thumbsup{
-    background: url('img/icon-thumbsup.png') no-repeat top left;
+    background-image: url('img/icon-thumbsup.png');
 }
 
-.history-topic a{
+.history-topics dl{
+    width: 900px;
+}
+
+.history-topics dd{
+    margin: 0;
+}
+
+.history-topic:first-child{
+    margin-bottom: 50px;
+}
+
+.topic-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 10px;
+} 
+
+.topic-source{
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.topic-title a{
     color:#834700;
 }
 
-.history-topic a:hover{
+.topic-title a:hover{
     color:#6a3900;
 }
 
-.history-topic a:active{
+.topic-title a:active{
     color:#cab7a2;
 }
 
