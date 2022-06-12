@@ -2,13 +2,25 @@ body{
     padding: 0;
     margin: 0 auto;
     font-family: 'Arial', sans-serif;
-    font-size: 14pt;
+    font-size: 16px;
+    line-height: 30px;
     min-width: 1200px;
 }
 
 .container{
-    width: 1010px;
+    width: 800px;
     margin: 0 auto;
+}
+
+.container-2{
+    width: 1014px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .header,
@@ -24,14 +36,9 @@ body{
     padding-top: 60px;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .header-top{
-    margin-bottom: 125px;
+    margin-bottom: 120px;
+    height: 76px;
 }
 
 .header-top img{
@@ -39,7 +46,8 @@ body{
 }
 
 .logo{
-    font-size: 70pt;
+    font-size: 70px;
+    line-height: 70px;
     font-weight: bold;
     text-align: center;
 }
@@ -52,18 +60,32 @@ body{
     float: right;
     margin: 0;
     padding: 0;
+    margin-top: 10px;
+}
+
+.main-menu li,
+.footer-menu li{
+    margin: 0;
+    float: left;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-right: 54px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .main-menu li a,
 .footer-menu li a{
     color: #fff;
     text-decoration: none;
-    font-size: 16pt;
     font-weight: bold;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    padding-top: 23px;
-    padding-bottom: 22px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+}
+
+.main-menu li:last-child,
+.footer-menu li:last-child{
+    padding-right: 0;
 }
 
 .main-menu li a:hover,
@@ -84,8 +106,7 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    padding: 22px 18px;
-    font-size: 16pt;
+    padding: 20px 15px;
     border: none;
 }
 
@@ -141,26 +162,58 @@ h3{
     text-transform: uppercase;
 }
 
+h2{
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .new-items{
-    padding-top: 70px;
+    padding-top: 88px;
     padding-bottom: 70px;
+}
+
+.new-item-list{
+    margin-top: 82px;
 }
 
 .new-item{
     float: left;
     border-left: 1px solid #e5e5e5;
-    padding: 0 20px 0 20px;
-    width: 450px;
+    padding: 8px 24px 0 34px;
+    width: 340px;
 }
 
 .new-item:last-child{
     border-right: 1px solid #e5e5e5;
 }
 
+.new-item-structure{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.new-item img{
+    fl oat: left;
+}
+
+.new-item-info{
+    float: right;
+}
+
+.new-item-table{
+    float: right;
+}
+
 .principles{
     background-color: #ffcb78;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .principles ul{
@@ -171,41 +224,54 @@ h3{
 
 .principle-item{
     float: left;
-    width: 250px;
-    border-left: 1px solid #e5b66c;
-    padding-top: 90px;
-    padding-right: 40px;
-    padding-left: 40px;
-    background-position: 40px top;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    width: 210px;
+    height: 150px;
     background-repeat: no-repeat;
 }
 
-.principle-item:first-child{
-    border-left-color: transparent;
-}
-
 .principle-brew{
+    background-position: 0 top;
     background-image: url('img/icon-brew.png');
+    padding-right: 95px;
+   
 }
 
 .principle-matreshka{
     background-image: url('img/icon-matreshka.png');
+    padding-right: 95px;
+    padding-left: 95px;
+    background-position: 95px top;
+    border-left: 1px solid #e5b66c;
+    border-right: 1px solid #e5b66c;
 }
 
 .principle-thumbsup{
     background-image: url('img/icon-thumbsup.png');
+    background-position: 95px top;
+    padding-left: 95px;
+    padding-right: 1px;
+}
+
+.history-topics{
+    margin-top: 95px;
 }
 
 .history-topics dl{
-    width: 900px;
+    margin-top: 85px;
 }
 
 .history-topics dd{
     margin: 0;
 }
 
-.history-topic:first-child{
-    margin-bottom: 50px;
+.history-topics dd img{
+    float: right;
+}
+
+.history-topics dd p{
+    width: 490px;
 }
 
 .topic-title{
@@ -217,9 +283,9 @@ h3{
 } 
 
 .topic-source{
-    font-size: 16px;
     font-weight: normal;
     text-transform: none;
+    float: right;
 }
 
 .topic-title a{
@@ -234,11 +300,32 @@ h3{
     color:#cab7a2;
 }
 
+.article{
+    background-color: #ede5d8;
+    margin: 0;
+    padding-top: 88px;
+    padding-bottom: 105px;
+}
+
+.article blockquote{
+    margin-left: 0;
+    margin-top: 82px;
+    width: 690px;
+}
+
+.article blockquote p{
+    margin-bottom: 55px;
+}
+
 .article cite{
     font-style: normal;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
+}
+
+.container{
+    border: 1px solid black;
 }
 
 .price-list{
