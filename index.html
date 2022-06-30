@@ -89,26 +89,22 @@
       <div class="container">
         <h2>Немного истории</h2>
         <dl>
-          <div class="history-topic">
-            <dt class="topic-title">
-              Происхождение кваса
-              <i class="topic-source">Источник: <a href="#">ru.wikipedia.org</a></i>
-            </dt>
-            <dd>
-              <img src="img\wiki-1.png" width="200" height="101">
-              <p>Квас на Руси появился в X-XI веке. Само слово «квас» тоже имеет древнерусское происхождение. Помимо России квас готовят в Белоруссии, Сербии, Македонии, Словакии и многих других странах, но называется он везде одинаково — квас.</p>
-            </dd>
-          </div>
-          <div class="history-topic">
-            <dt class="topic-title">
-              Классификация кваса
-              <i class="topic-source">Источник: <a href="#">ru.wikipedia.org</a></i>
-            </dt>
-            <dd>
-              <img src="img\wiki-2.png" width="200" height="101">
-              <p>По российскому ГОСТу для промышленного изготовления — это напиток с объёмной долей этилового спирта не более 1,2%, изготовленный в результате незавершённого спиртового и молочнокислого брожения сусла.</p>
-            </dd>
-          </div>
+          <dt class="topic-title">
+            Происхождение кваса
+            <i class="topic-source">Источник: <a href="#">ru.wikipedia.org</a></i>
+          </dt>
+          <dd class="topic-desc-w-margin">
+            <img src="img\wiki-1.png" width="200" height="101">
+            <p>Квас на Руси появился в X-XI веке. Само слово «квас» тоже имеет древнерусское происхождение. Помимо России квас готовят в Белоруссии, Сербии, Македонии, Словакии и многих других странах, но называется он везде одинаково — квас.</p>
+          </dd>
+          <dt class="topic-title">
+            Классификация кваса
+            <i class="topic-source">Источник: <a href="#">ru.wikipedia.org</a></i>
+          </dt>
+          <dd>
+            <img src="img\wiki-2.png" width="200" height="101">
+            <p>По российскому ГОСТу для промышленного изготовления — это напиток с объёмной долей этилового спирта не более 1,2%, изготовленный в результате незавершённого спиртового и молочнокислого брожения сусла.</p>
+          </dd>
         </dl>
       </div>
     </div>
@@ -165,63 +161,67 @@
       </div>
     </div>
     <div class="order">
-      <form action="#" method="POST">
-        <h2>Заказать</h2>
-        <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
-        <div class="form-group">
-          <label for="name">Представьтесь:</label>
-          <input type="text" name="name" id="name">
-        </div>
-        <div class="form-group">
-          <label for="phone">Номер телефона:</label>
-          <input type="text" name="phone" id="phone">
-        </div>
-        <div class="form-group">
-          <label for="add-phone">Доп. номер:</label>
-          <input type="text" name="add-phone" id="add-phone">
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="text" name="email" id="email">
-        </div>
-        <div class="form-group">
-          <label for="order-value">Объём заказа:</label>
-          <br>
-          <select name="order-value" id="order-value">
-            <option value="1">От 5 до 10 баррелей в неделю</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="comment">Доп. комментарий:</label>
-          <textarea type="text" name="comment" id="comment">
-          </textarea>
-        </div>
-        <div class="form-group">
-          <label>
-            <input type="checkbox" name="email-agree" id="email-agree" checked>
-            Я согласен получать квасную рассылку
-          </label>
-        </div>
-        <input class="btn brown-btn" type="submit" value="Отправить заказ">
-      </form>
+      <div class="container">
+        <form action="#" method="POST">
+          <h2>Заказать</h2>
+          <p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
+          <div class="form-group">
+            <label for="name">Представьтесь:</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Номер телефона:</label>
+            <input type="text" name="phone" id="phone">
+          </div>
+          <div class="form-group">
+            <label for="add-phone">Доп. номер:</label>
+            <input type="text" name="add-phone" id="add-phone">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+          </div>
+          <div class="form-group">
+            <label for="order-value">Объём заказа:</label>
+            <br>
+            <select name="order-value" id="order-value">
+              <option value="1">От 5 до 10 баррелей в неделю</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="comment">Доп. комментарий:</label>
+            <textarea type="text" name="comment" id="comment">
+            </textarea>
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="email-agree" id="email-agree" checked>
+              Я согласен получать квасную рассылку
+            </label>
+          </div>
+          <input class="btn brown-btn" type="submit" value="Отправить заказ">
+        </form>
+      </div>
     </div>
     <div class="footer">
-      <img src="img\logo.png" width="140" height="76" alt="Кваст">
-      <ul class="footer-menu">
-        <li><a href="#">История</a></li>
-        <li><a href="#">Производство</a></li>
-        <li><a href="#">Ассортимент</a></li>
-        <li><a href="#">Где купить</a></li>
-      </ul>
-      <div>
-        <a href="#">Инстаграм</a>
-        <a href="#">Фейсбук</a>
-        <a href="#">Вконтакте</a>
-      </div>
-      <p class="copyright">При перепечатке материалов ссылка на сайт обязательна!</p>
-      <div class="developer">
-        <a href="https://htmlacademy.ru"><img src="img\htmlacademy.png" width="27" height="34"/></a><b>Разработчик:</b>
-        <a href="https://htmlacademy.ru">HTML Academy</a>
+      <div class="container-2">
+        <img src="img\logo.png" width="140" height="76" alt="Кваст">
+        <ul class="footer-menu">
+          <li><a href="#">История</a></li>
+          <li><a href="#">Производство</a></li>
+          <li><a href="#">Ассортимент</a></li>
+          <li><a href="#">Где купить</a></li>
+        </ul>
+        <div>
+          <a href="#">Инстаграм</a>
+          <a href="#">Фейсбук</a>
+          <a href="#">Вконтакте</a>
+        </div>
+        <p class="copyright">При перепечатке материалов ссылка на сайт обязательна!</p>
+        <div class="developer">
+          <a href="https://htmlacademy.ru"><img src="img\htmlacademy.png" width="27" height="34"/></a><b>Разработчик:</b>
+          <a href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
       </div>
     </div>
   </body>

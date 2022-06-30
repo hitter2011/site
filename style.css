@@ -164,6 +164,7 @@ h3{
 
 h2{
     font-size: 40px;
+    line-height: 60px;
     padding: 0;
     margin: 0;
 }
@@ -174,18 +175,18 @@ h3{
 }
 
 .new-items{
-    padding-top: 88px;
-    padding-bottom: 70px;
+    padding-top: 80px;
+    padding-bottom: 65px;
 }
 
 .new-item-list{
-    margin-top: 82px;
+    margin-top: 75px;
 }
 
 .new-item{
     float: left;
     border-left: 1px solid #e5e5e5;
-    padding: 8px 24px 0 34px;
+    padding: 0 24px 0 34px;
     width: 340px;
 }
 
@@ -255,15 +256,24 @@ h3{
 }
 
 .history-topics{
-    margin-top: 95px;
+    padding-top: 80px;
 }
 
 .history-topics dl{
-    margin-top: 85px;
+    margin-top: 60px;
 }
 
 .history-topics dd{
     margin: 0;
+}
+
+.history-topics dt{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.history-topics dd{
+    margin-bottom: 60px;
 }
 
 .history-topics dd img{
@@ -283,6 +293,7 @@ h3{
 } 
 
 .topic-source{
+    font-size: 16px;
     font-weight: normal;
     text-transform: none;
     float: right;
@@ -325,11 +336,17 @@ h3{
 }
 
 .container{
-    border: 1px solid black;
+    bor der: 1px solid black;
+}
+
+.assortment{
+    margin-top: 100px;
 }
 
 .price-list{
+    margin-top: 40px;
     border-collapse: collapse;
+    width: 100%;
 }
 
 .price-list td,
@@ -338,7 +355,7 @@ h3{
 }
 
 .price-list tr{
-    line-height: 40px;
+    line-height: 80px;
 }
 
 .price-list th{
