@@ -141,8 +141,8 @@ body{
 }
 
 .ghost-btn{
-    color: rgba(0, 0, 0, 0.3);
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: #bcb6ab;
+    border: 2px solid #a5a097;
 }
 
 .ghost-btn:hover{
@@ -281,6 +281,7 @@ h3{
 }
 
 .history-topics dd p{
+    color: #404040;
     width: 490px;
 }
 
@@ -325,6 +326,7 @@ h3{
 }
 
 .article blockquote p{
+    color: #404040;
     margin-bottom: 35px;
     width: 690px;
 }
@@ -335,7 +337,7 @@ h3{
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .article .btn{
@@ -343,7 +345,7 @@ h3{
 }
 
 .assortment{
-    padding-top: 80px;
+    padding-top: 90px;
     padding-bottom: 80px;
 }
 
@@ -353,37 +355,58 @@ h3{
     width: 100%;
 }
 
-.price-list td,
-.price-list th{
-    border-bottom: 1px solid #363636;
-}
-
-.price-list tr{
-    line-height: 60px;
+.price-list td{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 17px 0;
 }
 
 .price-list th{
     text-transform: uppercase;
-    font-size: 10px;
-    padding-bottom: 10px;
+    color: #999999;
+    font-weight: normal;
+    font-size: 11px;
     text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1px 1px 30px 1px;
 }
 
-.price-list th:last-child,
-.price-list td:last-child{
-    text-align: right;
+.price-list tr td:not(.price-name){
+    color: #404040;
 }
 
-.price-list tr td:first-child{
+.price-list td:first-child{
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
+}
+
+.price-list .price-name{
+    width: 406px;
+}
+
+.price-list .price-alc{
+    width: 92px;
+}
+
+.price-list .price-kkal{
+    width: 62px;
+}
+
+.price-list .price-value{
+    width: 170px;
+}
+
+.price-list .price-cost{
+    text-align: right;
 }
 
 .price-list sup{
     color: white;
     background-color: black;
-    font-size: 12px;
+    padding: 2px 5px;
+    margin-left: 20px;
+    font-size: 8px;
+    border-radius: 2px;
 }
 
 .order{
@@ -394,12 +417,12 @@ h3{
 
 .order p{
     margin-top: 75px;
-    margin-bottom: 65px;
-    width: 690px;
+    margin-bottom: 70px;
+    width: 660px;
 }
 
 .order form{
-    width: 690px;
+    width: 630px;
 }
 
 .order label{
