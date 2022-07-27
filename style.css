@@ -13,7 +13,7 @@ body{
 }
 
 .container-2{
-    width: 1014px;
+    width: 1015px;
     margin: 0 auto;
 }
 
@@ -30,10 +30,10 @@ body{
 }
 
 .header{
-    background: url('img/wheat-back.jpg') no-repeat center;
+    background: url('img/wheat-back.jpg') no-repeat bottom;
     background-size: cover;    
-    min-height: 550px;
-    padding-top: 60px;
+    min-height: 490px;
+    padding: 60px 0 0 0;
 }
 
 .header-top{
@@ -41,8 +41,10 @@ body{
     height: 76px;
 }
 
-.header-top img{
+.header-logo{
     float: left;
+    width: 140px;
+    height: 76px;
 }
 
 .logo{
@@ -69,9 +71,9 @@ body{
     float: left;
     padding-top: 14px;
     padding-bottom: 13px;
-    padding-right: 54px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-right: 54.5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .main-menu li a,
@@ -91,14 +93,14 @@ body{
 .main-menu li a:hover,
 .footer-menu li a:hover{
     color: #ffcb78;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid #fff;
 }
 
 .main-menu li a:active,
 .footer-menu li a:active{
     color: rgba(255, 203, 120, 0.3);
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid #fff;
 }
 
@@ -186,29 +188,56 @@ h3{
 .new-item{
     float: left;
     border-left: 1px solid #e5e5e5;
-    padding: 0 24px 0 34px;
-    width: 340px;
+    padding: 0 10px 0 34px;
+    width: 354px;
 }
 
 .new-item:last-child{
     border-right: 1px solid #e5e5e5;
 }
 
-.new-item-structure{
-    font-size: 14px;
-    line-height: 24px;
-}
-
-.new-item img{
-    fl oat: left;
-}
-
 .new-item-info{
-    float: right;
+    position:relative;
+    display:inline-block;
+}
+
+.new-item-content{
+    width: 150px;
+    position:absolute;
+    right: 0;
+    top: 25px;
 }
 
 .new-item-table{
-    float: right;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.new-item-table td{
+    border: 1px solid #e5e5e5;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.new-item-structure{
+    font-size: 14px;
+    line-height: 24px;
+    color: #404040;
+    margin: 0;
+}
+
+.new-item-info img{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.new-item-description{
+    color: #404040;
+    width:100%;
+    margin-bottom: 70px;
+    margin-top: 0;
 }
 
 .principles{
@@ -231,6 +260,9 @@ h3{
     height: 150px;
     background-repeat: no-repeat;
 }
+.principle-item p{
+    color: #404040;
+}
 
 .principle-brew{
     background-position: 0 top;
@@ -252,7 +284,7 @@ h3{
     background-image: url('img/icon-thumbsup.png');
     background-position: 95px top;
     padding-left: 95px;
-    padding-right: 1px;
+    padd ing-right: 1px;
 }
 
 .history-topics{
