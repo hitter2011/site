@@ -204,6 +204,7 @@ h3{
     border-left: 1px solid #e5e5e5;
     padding: 0 0 0 34px;
     width: 364px;
+    height: 757px;
 }
 
 .new-item:last-child{
@@ -390,22 +391,27 @@ h3{
     padding-bottom: 105px;
 }
 
-.article h2{
-    margin-left: 110px;
-}
-
 .article blockquote{
     margin-left: 0;
     margin-top: 75px;
     width: 100%;
-    background: url('img/quotes.png') no-repeat ;
 }
 
 .article p{
+    position: relative;
     color: #404040;
     margin-bottom: 35px;
     width: 690px;
-    margin-left: 110px;
+}
+
+.article p::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -110px;
+    top: 0px;
+    background: url('img/quotes.png') no-repeat;
 }
 
 .article cite{
@@ -415,12 +421,10 @@ h3{
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
-    margin-right: 107px;
 }
 
 .article .btn{
     float: left;
-    margin-left: 110px;
 }
 
 .assortment{
