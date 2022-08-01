@@ -23,17 +23,13 @@ body{
     clear: both;
 }
 
-.header,
-.footer{
-    background-color: #363636;
-    color: #fff;
-}
-
 .header{
     background: url('img/wheat-back.jpg') no-repeat bottom;
     background-size: cover;    
     min-height: 490px;
     padding: 60px 0 0 0;
+    background-color: #363636;
+    color: #fff;
 }
 
 .header-top{
@@ -54,8 +50,8 @@ body{
     text-align: center;
 }
 
-.main-menu,
-.footer-menu{
+.main-menu
+{
     width: 600px;
     list-style: none;
     text-transform: uppercase;
@@ -65,19 +61,15 @@ body{
     margin-top: 10px;
 }
 
-.main-menu li,
-.footer-menu li{
+.main-menu li{
     margin: 0;
     float: left;
-    padding-top: 14px;
-    padding-bottom: 13px;
-    padding-right: 54.5px;
+    padding: 14px 54.46px 13px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.main-menu li a,
-.footer-menu li a{
+.main-menu li a{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -85,20 +77,17 @@ body{
     padding-bottom: 19px;
 }
 
-.main-menu li:last-child,
-.footer-menu li:last-child{
+.main-menu li:last-child{
     padding-right: 0;
 }
 
-.main-menu li a:hover,
-.footer-menu li a:hover{
+.main-menu li a:hover{
     color: #ffcb78;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid #fff;
 }
 
-.main-menu li a:active,
-.footer-menu li a:active{
+.main-menu li a:active{
     color: rgba(255, 203, 120, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid #fff;
@@ -134,57 +123,53 @@ body{
 .brown-btn{
     color: white;
     background-color: #834700;
-    padding: 17px 22px;
+    padding: 16px 22.5px 17px 22.5px;
 }
 
 .brown-btn:hover{
     color: white;
     background-color: #6a3900;
-    padding: 17px 22px;
 }
 
 .brown-btn:active{
     color: rgba(255, 255, 255, 0.3);
     background-color: #6a3900;
-    padding: 17px 22px;
 }
 
 .white-btn{
     color: #834700;
     border: 2px solid #834700;
-    padding: 15px 20px;
+    padding: 14px 20px 15px 20px;
 }
 
 .white-btn:hover{
     color: #6a3900;
     border: 2px solid #6a3900;
-    padding: 15px 20px;
 }
 
 .white-btn:active{
     color: rgba(106, 57, 0, 0.3);
     border: 2px solid rgba(106, 57, 0, 0.3);
-    padding: 15px 20px;
 }
 
 .ghost-btn{
     color: #bcb6ab;
     border: 2px solid #a5a097;
-    padding: 15px 20px;
+    padding: 8px 20px;
 }
 
 .ghost-btn:hover{
     color: #fff;
     background-color: #a5a097;
     border: none;
-    padding: 17px 22px;
+    padding: 10px 22px;
 }
 
 .ghost-btn:active{
     color: rgba(255, 255, 255, 0.3);
     background-color: #8f8a81;
     border: none;
-    padding: 17px 22px;
+    padding: 10px 22px;
 }
 
 h2,
@@ -192,7 +177,8 @@ h3{
     text-transform: uppercase;
 }
 
-h2{
+h2,
+.new-item h3{
     font-size: 40px;
     line-height: 60px;
     padding: 0;
@@ -275,8 +261,8 @@ h3{
     margin-left: 20px;
 }
 
-.new-item .white-btn{
-    margin-left: 5px;
+.new-item .brown-btn{
+    margin-left: 2px;
 }
 
 .principles{
@@ -299,6 +285,15 @@ h3{
     height: 150px;
     background-repeat: no-repeat;
 }
+
+.principle-item h2{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .principle-item p{
     color: #404040;
 }
@@ -323,7 +318,6 @@ h3{
     background-image: url('img/icon-thumbsup.png');
     background-position: 95px top;
     padding-left: 95px;
-    padd ing-right: 1px;
 }
 
 .history-topics{
@@ -349,6 +343,8 @@ h3{
 
 .history-topics dd img{
     float: right;
+    vertical-align: bottom;
+    margin-top: 10px;
 }
 
 .history-topics dd p{
@@ -371,6 +367,10 @@ h3{
     float: right;
 }
 
+.topic-title i{
+    margin-right: 1px;
+}
+
 .topic-title a{
     color:#834700;
 }
@@ -390,16 +390,22 @@ h3{
     padding-bottom: 105px;
 }
 
+.article h2{
+    margin-left: 110px;
+}
+
 .article blockquote{
     margin-left: 0;
     margin-top: 75px;
     width: 100%;
+    background: url('img/quotes.png') no-repeat ;
 }
 
-.article blockquote p{
+.article p{
     color: #404040;
     margin-bottom: 35px;
     width: 690px;
+    margin-left: 110px;
 }
 
 .article cite{
@@ -409,10 +415,12 @@ h3{
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
+    margin-right: 107px;
 }
 
 .article .btn{
     float: left;
+    margin-left: 110px;
 }
 
 .assortment{
@@ -566,13 +574,140 @@ h3{
 }
 
 .footer{
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 80px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer-top{
+    margin-bottom: 47px;
+    height: 76px;
+}
+
+.footer-logo{
+    margin-left: 37px;
+    float: left;
+    width: 140px;
+    height: 76px;
+}
+
+.footer-menu{
+    width: 600px;
+    list-style: none;
+    text-transform: uppercase;
+    float: right;
+    margin: 7px 107px 0 0;
+    padding: 0;
+}
+
+.footer-menu li{
+    margin: 0;
+    float: left;
+    padding: 14px 54.46px 13px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-menu li:last-child{
+    padding-right: 0;
+}
+
+.footer-menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 19px;
+}
+
+.footer-menu li a:hover{
+    color: #ffcb78;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #fff;
+}
+
+.footer-menu li a:active{
+    color: rgba(255, 203, 120, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #fff;
+}
+
+.footer-bottom{
+    height: 68px;
+}
+
+.socials{
+    float: left;
+    width: 216px;
+    height: 68px;
+    font-size: 0px;
+    background-color: #1b1b1b;
+}
+
+.social-btn{
+    border: 1px solid #322d24;
+    height: 66px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.academy-logo-btn{
+    border: 1px solid #322d24;
+    display: inline-block;
+    background-color: #1b1b1b;
+    vertical-align: middle;
+}
+
+.academy-logo-btn img{
+    margin: 16px 22px 11px 21px;
+}
+
+.social-btn-in{
+    width: 70px;
+    background: url('img/icon-insta.png') no-repeat center;
+    border-right: none;
+}
+    
+.social-btn-fb{
+    width: 71px;
+    background: url('img/icon-fb.png') no-repeat center;
+    border-right: none;
+}
+        
+.social-btn-vk{
+    width: 71px;
+    background: url('img/icon-vk.png') no-repeat center;
+}
+           
+.copyright{
+    float: left;
+    color: #989898;
+    font-size: 14px;
+    line-height: 20px;
+    width: 200px;
+    height: 40px;
+    margin-left: 91px;
+    margin-top: 12px;
+}
+
+.developer{
+    float: right;
+    margin-right: 8px;
+    height: 68px;
+    width: 300px;
+    color: #989898;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.developer b{
+    margin-left: 30px;
 }
 
 .developer a:last-child{
     text-decoration: none;
-    color:brown;
+    color: #989898;
 }
 
 .developer a:last-child:hover{
