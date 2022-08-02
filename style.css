@@ -204,7 +204,7 @@ h3{
     border-left: 1px solid #e5e5e5;
     padding: 0 0 0 34px;
     width: 364px;
-    height: 757px;
+    height: 759px;
 }
 
 .new-item:last-child{
@@ -369,7 +369,7 @@ h3{
 }
 
 .topic-title i{
-    margin-right: 1px;
+    width: 196px;
 }
 
 .topic-title a{
@@ -406,11 +406,11 @@ h3{
 
 .article p::after{
     content: "";
-    width: 100px;
-    height: 100px;
+    width: 41px;
+    height: 31px;
     position: absolute;
-    left: -110px;
-    top: 0px;
+    left: -105px;
+    top: 5px;
     background: url('img/quotes.png') no-repeat;
 }
 
@@ -421,6 +421,7 @@ h3{
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
+    width: 330px;
 }
 
 .article .btn{
